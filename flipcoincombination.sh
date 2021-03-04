@@ -1,24 +1,24 @@
 #!/bin/bash
 count=0
-HH=0
-TT=0
+HHH=0
+TTT=0
 while [ $count -lt 10 ]
 do 
      coin=$((RANDOM%2))
       if [ $coin -eq 1 ]
       then
-	      	HH=$(($HH+1))
-            dict[$count]="HH"
+	      	HHH=$(($HHH+1))
+            dict[$count]="HHH"
       else
-	       	TT=$(($TT+1))
-            dict[$count]="TT"
+	       	TTT=$(($TTT+1))
+            dict[$count]="TTT"
        fi
          ((count++))
 done
 echo ${dict[@]}
-echo "total heads are: " $HH
-echo "total tails are: " $TT
-percentageHH=$((100*$HH/10))
-percentageTT=$((100*$TT/10))
-echo "percentage of Heads is: " $percentageHH
-echo "percentage of Tails is: " $percentageTT
+echo "total heads are: " $HHH
+echo "total tails are: " $TTT
+percentageHHH=$((100*$HHH/10))
+percentageTTT=$((100*$TTT/10))
+echo "percentage of Heads is: " $percentageHHH
+echo "percentage of Tails is: " $percentageTTT
